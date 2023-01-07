@@ -595,19 +595,10 @@ a{
   height: 56px;
   transition: all 0.3s ease;
 }
-.buttonCircle .buttonSpan {
-  position: relative;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 900;
-  letter-spacing: 0.1em;;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color:var(--color-button);
-}
 .buttonCircle svg {
   position: relative;
   top: 0;
+  right: 3px;
   margin-left: 10px;
   fill: none;
   stroke-linecap: round;
@@ -618,7 +609,7 @@ a{
   transition: all 0.3s ease;
 }
 .buttonCircle:hover:before {
-  width: 35%;
+  width: 40%;
   background: var(--color-seemoreprimary);
 }
 .buttonCircle:hover svg {
