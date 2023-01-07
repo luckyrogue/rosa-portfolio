@@ -29,6 +29,7 @@ svg{
   --color-pink-light: #e5a1aa;
   --color-green-light: #7AD0AC;
   --color-blue-light: #8395CD;
+  --color-section-button: #e5a1aa;
 
   /* Dark Theme Variables */
   --color-text-dark: #FAF4E5;
@@ -39,6 +40,7 @@ svg{
   --color-text: var(--color-text-light);
   --color-button: var(--color-text-light);
   --color-background: var(--color-background-light);
+  --color-section-button: var(--color-pink-light);
   --color-pink: var(--color-pink-light);
   --color-green: var(--color-pink-light);
   --color-blue: var(--color-pink-light);
@@ -50,6 +52,7 @@ svg{
   --color-text: var(--color-text-dark);
   --color-button: var(--color-text-dark);
   --color-background: var(--color-background-dark);
+  --color-section-button: var(--color-background-dark);
   --color-pink: var(--color-text-dark);
   --color-green: var(--color-text-dark);
   --color-blue: var(--color-text-dark);
@@ -268,27 +271,33 @@ svg{
   border-radius: 2rem;
   border: 0.06 rem solid var(--color-pink);
   border-bottom: none;
-  background-color: var(--color-pink);
-  color: var(--color-background);
+  background-color: var(--color-section-button);
+  color: var(--color-section-button);
   width: 36rem;
   height: 6.25rem;
   text-align: left;
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 1rem;
 }
 
-.icon {
-  position: absolute;
-  left: auto;
-  bottom: auto;
+.section-button img{
+  position: relative;
+  bottom: 90%;
+  left: 90%;
 }
 
 @media screen and (max-width: 414px){
   .section-button{
+    position: relative;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
+  }
+  .section-button img{
+    position: relative;
+    bottom: 40px;
+    left: 90%;
   }
 }
 
@@ -609,14 +618,14 @@ a{
   transition: all 0.3s ease;
 }
 .buttonCircle:hover:before {
-  width: 100%;
+  width: 35%;
   background: var(--color-seemoreprimary);
 }
 .buttonCircle:hover svg {
   transform: translateX(0);
 }
 .buttonCircle:active {
-  transform: scale(0.96);
+  transform: scale(0.2);
 }
 
 .section-detail-contact{
